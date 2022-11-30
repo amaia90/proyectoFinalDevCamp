@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codepen</title>
+    <script  src = " https://kit.fontawesome.com/0f3793b933.js "  crossorigin = " anónimo " > </script> 
+    <link rel="stylesheet" href="proyectoFinal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ranga:wght@700&family=Roboto&family=Roboto+Mono:wght@100&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    
+</head>
+    <body>
+        
+                <div class="menu-wrapper"><!--Creación de la clase "menu-wrapper que engloba el menu de la página con una left-column y right-column"-->
+                    <div class="left-column"><!--Clase para incluir la parte izquierda del menú-->
+                        <div class="img-logo"> <!--Inserto la imagen del logo y creo una clase para editarla llamada img-logo-->
+
+                            <img src="images/logo/logo-codepen.png ">
+                        </div>
+                        
+                        <div class="explore"> <!--Creación de una clase llamada explore que incluye los enlaces explore y pens-->
+                            <a  href="explore" style="color:#F7DC6F;">EXPLORE</a><br>
+
+                            <a href="Pens">Pens</a>
+                        </div>
+
+                        <div class="links-menu"><!--Creación de la clase links-menu que engloba a los restantes enlaces del menú-->
+                            <a href="Projects">Projects</a>
+                         </div>
+
+                        <div class="links-menu">
+                            <a href="Posts">Posts</a>
+                        </div>
+                                
+                        <div class="links-menu">
+                            <a href="Collections">Collections</a>
+                                </div>
+                        <div class="spark-wrapper"> <!--Creación de la clase spark-wrapper para darle estilos propios-->
+                            Spark
+                        </div>
+                    </div>
+
+                    <div class="right-column"> <!--Creación de la clase right-column que engloba a todos los button e icono lupa de la parte derecha-->
+                            <button type="button" class="create"><!--Button con la clase create-->
+                                Create
+                            </button>
+                            <div class="search"><!--Aquí incluyo el icono de lupa-->
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <button type="button" class="login">
+                                LogIn
+                                </button>
+                            <button type="button" class="signup">
+                                SignUp
+                            </button>
+                    </div> <!--Finaliza la clase de right-column-->
+                </div><!--Con esta etiqueta se cierra el menu-wrapper-->
+                
+                <div class="page-container"> <!--Comienza el contenido de la parte central de la página-->
+                    <div class="column-left-body">
+                    
+                        <h2 style="font-weight: lighter;color:#7F8C8D;"><!--Estilo inline las líneas de las letras más finas y el color gris-->
+                            <!--En el siguiente párrafo dado que tiene bastantes estilos en la misma línea lo he hecho también inline, dándole color blanco a 
+                            a las palabras social development environment y que estén en negrita con la etiqueta strong-->
+            
+                            CodePen is a <strong><span style="color: white;">social development <br> environment</span></strong> for front-end designers <br> and developers.
+                            <!--He insertado una imagen que es la mano la he alineado verticalmente con vertical.align-->
+                            <!-- Utilizo el contenedor en línea span para que todo sea seguido y no se cree una nueva línea de contenido -->
+                            <img  class="hand "src="images/icon-hand.png"></span>
+                        </h2>
+
+                        <h4 style="color:#7F8C8D;"><!--Tamaño del texto más pequeño que h2 y en el color especificado-->
+                            It's the best place to build and deploy a <br> website, show off your work, build test cases, <br> fand find inspiration.
+                        </h4>
+                    
+                        <div class="links-wrapper"><!--Clase lincks-wrapper que incluye los button con clases independientes para poder aplicar formato propio-->
+                            <button class="signupFree">
+                                Sign Up For Free
+                            </button>
+
+                             <button class="learn">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="column-right-body"><!--Declaro clase column-right-body que incluye otra clase en la que se modifica ciertas palabras el grosor de la negrita y el color-->
+                        <div class="title-text-right">
+                            <h4>This is <span style="font-weight: bold;color:#85C1E9;" ><strong>CodePen Projects</strong></span>!</h4>
+                        </div> 
+                        <div class="img-code-right"><!--Se declara clase que incluye una imagen-->
+                            <img src="images/imgCode.JPG">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-footer"> <!--Parte del pie de página-->
+                    <div class="text-teams"><!--Tienen clases direntes para facilitar aplicar cambios css en el futuro-->
+                        <label>CodePen for <a href="#">teams</a></label><!--Label para CodePen for y lo demás es un enlace-->
+                    </div>
+
+                    <div class="text-education">
+                        <label>CodePen for <a href="#">education</a></label>
+                    </div>
+
+                    <div class="text-privacy">
+                        <label>CodePen for <a href="#">privacy</a></label>
+                    </div>
+
+                    <div class="text-writing">
+                        <label>CodePen for <a href="#">writing</a></label>
+                    </div>
+                </div>
+    </body>
+</html>
